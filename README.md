@@ -19,6 +19,7 @@ Asynchronous test suite:
 test('my async suite', (ok, done) => {
     setTimeout(() => {
         ok(false !== false, 'this will raise an error')
+        done()
     })
 })
 ```
