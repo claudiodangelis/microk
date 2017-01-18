@@ -1,8 +1,3 @@
-# microk
-
-Example:
-
-```
 const { ok, test, beforeEach, afterEach } = require('../')
 
 var myAsyncFunc = function (callback) {
@@ -41,11 +36,3 @@ test('obvious suite', function (ok) {
 test('the very last', function (ok) {
     ok(1 === 1, 'One should equal one')
 })
-
-```
-
-### Credits
-
-**microk** share its origin with another vanilla js testing project: [tressa](https://github.com/WebReflection/tressa) by [Andrea Giammarchi (WebReflection)](https://twitter.com/webreflection).
-
-Read more [JS Vanilla Test Code Coverage](https://medium.com/@WebReflection/vanilla-js-testing-part-ii-63b9d736121), [Vanilla JS Testing — Part II](https://medium.com/@WebReflection/vanilla-js-testing-part-ii-63b9d736121).

@@ -1,7 +1,9 @@
 {
   "name": "microk",
   "version": "0.1.0",
-  "description": "",
+  "description": "A zero-dependency testing framework.",
+  "author": "Claudio d'Angelis",
+  "license": "MIT",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
