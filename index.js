@@ -1,5 +1,6 @@
 var exitCode = 0,
-    labelCounter = 0,
+    suiteCounter = 0,
+    okCounter = 0,
     queue = [],
     current = ''
 var isAsync = function (item) {
@@ -24,6 +25,10 @@ process.on('exit', function () {
     process.exit(exitCode || 0)
 })
 var ok = function (expression, label, extra) {
+    okCounter++
+    if (typeof label === 'undefined') {
+        label = `#${okCounter}`
+    }
     if (expression === false) {
         exitCode = 1
         console.error(`NOT OK: ${label}`)
@@ -79,7 +84,7 @@ var afterEach = function (fn) {
 var test = function (label, fn) {
     if (typeof label === 'function') {
         fn = label
-        label = `(untitled suite #${++labelCounter})`
+        label = `(untitled suite #${++suiteCounter})`
     }
     addToQueue({
         fn: __beforeEach,

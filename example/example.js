@@ -6,33 +6,18 @@ var myAsyncFunc = function (callback) {
     }, 30)
 }
 
-ok(2 === 1, 'You can have quick unsuited assertions')
-
-beforeEach(function (done) {
-    // Initializing a databse, very heavy operation
-    setTimeout(function () {
-        done()
-    }, 10)
-})
-
-afterEach(function () {
-    // Clean the database
-})
-
-test('my suite', function (ok, done) {
-    ok(true === true, 'preliminary conditions are ready to start myAsyncFunc')
-    myAsyncFunc(function (value) {
-        ok(value === true, 'Async function returned true')
-        done()
-    })
-})
-
-test('obvious suite', function (ok) {
-    ok(1 === 1, 'One should equal one')
-    ok(2 === 2, 'Two should equal two')
-    ok(3 === 3, 'Three should equal three')
-})
-
-test('the very last', function (ok) {
-    ok(1 === 1, 'One should equal one')
+// The assertion is true, does not produce any output
+ok(1 === 1)
+// This second assertion will fail, and will print
+//  NOT OK: #2
+ok(1 === 2)
+// Add a label
+ok(2 === 1, 'two equals one')
+// Add an `extra` paramter. If the assertion fails, the extra paramter will be
+// invoked if it's a function, or echoed otherwise
+let value = 'my value'
+ok(value === 'the value', 'value is correct (first test)', value)
+// ...or...
+ok(value === 'value', 'value is correct (second test)', () => {
+    console.log('actual value is:', value)
 })
