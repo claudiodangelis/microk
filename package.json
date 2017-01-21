@@ -1,6 +1,6 @@
 {
   "name": "microk",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "A zero-dependency testing framework.",
   "author": "Claudio d'Angelis",
   "license": "MIT",
@@ -8,6 +8,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Claudio d'Angelis",
+  "repository": {
+      "type": "git",
+      "url": "git+https://github.com/claudiodangelis/microk.git"
+  },
+  "bugs": {
+      "url": "https://github.com/claudiodangelis/microk/issues"
+  },
+  "homepage": "https://github.com/claudiodangelis/microk"
 }
