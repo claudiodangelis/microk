@@ -1,6 +1,18 @@
 # microk
 
-**microk** is a zero-dependency testing framework for NodeJS that won't produce any output unless an assertion is false. If an assertion fails the exit code of the program is 1.
+**microk** is a zero-dependency testing library for NodeJS.
+
+**microk** won't produce any output unless an assertion is false. If an assertion fails the **exit code** of the program is 1.
+
+### Installation
+
+Installation using **npm** or **yarn**:
+
+`npm install --save-dev microk`
+
+or
+
+`yarn add --dev microk`
 
 ### Walkthrough
 
@@ -74,4 +86,4 @@ ok(value === 2, 'value is correct', () => {
 
 **microk** share its origin with another vanilla js testing project: [tressa](https://github.com/WebReflection/tressa) by [Andrea Giammarchi (WebReflection)](https://twitter.com/webreflection).
 
-Read more [JS Vanilla Test Code Coverage](https://medium.com/@WebReflection/vanilla-js-testing-part-ii-63b9d736121), [Vanilla JS Testing — Part II](https://medium.com/@WebReflection/vanilla-js-testing-part-ii-63b9d736121).
+Read more about Andrea's idea: [JS Vanilla Test Code Coverage](https://medium.com/@WebReflection/vanilla-js-testing-part-ii-63b9d736121), [Vanilla JS Testing — Part II](https://medium.com/@WebReflection/vanilla-js-testing-part-ii-63b9d736121).

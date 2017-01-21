@@ -1,6 +1,6 @@
 {
   "name": "microk",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A zero-dependency testing framework.",
   "author": "Claudio d'Angelis",
   "license": "MIT",
@@ -16,5 +16,8 @@
   "bugs": {
       "url": "https://github.com/claudiodangelis/microk/issues"
   },
-  "homepage": "https://github.com/claudiodangelis/microk"
+  "homepage": "https://github.com/claudiodangelis/microk",
+  "keywords": [
+      "test", "testing"
+  ]
 }
